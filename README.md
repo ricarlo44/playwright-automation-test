@@ -151,6 +151,4 @@ For a maintainable development process:
 - There is not yet one root workflow that installs and runs every language and project.
 - Some reports and screenshots are historical artifacts, not the result of a current execution.
 
-## Related project
 
-The `julietaPage` web application is maintained outside this repository at https://github.com/ricarlo44/julietamaga
