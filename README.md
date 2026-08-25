@@ -2,6 +2,12 @@
 
 Learning and practice repository for test automation with **Playwright**, **pytest**, **Python**, **JavaScript**, and **TypeScript**. The examples cover UI, API, integration, design patterns, debugging, performance, and automation against external services.
 
+## Repository status
+
+This repository is organized as a collection of independent automation projects. The current focus is browser and API testing with Playwright across Python and Node.js/TypeScript, with reusable fixtures, Page Objects, reports, Docker examples, and GitHub Actions workflows.
+
+Quick links: [Python projects](#playwright-with-python) · [JavaScript and TypeScript projects](#playwright-with-javascript-and-typescript) · [Setup](#python-setup) · [Reports](#reports) · [GitHub Actions](#github-actions)
+
 > This repository contains independent examples. Each folder may have its own configuration, and not all tests are designed to run together from the root directory.
 
 ## Contents
