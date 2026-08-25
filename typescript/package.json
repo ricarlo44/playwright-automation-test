@@ -1,0 +1,16 @@
+{
+  "name": "automationexercise-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "allure:generate": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^26.2.0",
+    "allure-commandline": "^2.13.10",
+    "allure-playwright": "^2.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+# Dependencies and environments
+node_modules/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Test and build artifacts
+.next/
+test-results/
+playwright-report/
+allure-results/
+.coverage
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

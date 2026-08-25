@@ -1,0 +1,16 @@
+{
+  "name": "mytypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "script": "node script.js"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}
