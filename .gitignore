@@ -21,6 +21,13 @@ htmlcov/
 *.pem
 *.key
 
+# PythonAutomation local virtual environment and authentication state
+PythonAutomation/Include/
+PythonAutomation/Lib/
+PythonAutomation/Scripts/
+PythonAutomation/.auth/
+PythonAutomation/pyvenv.cfg
+
 # Editor and OS files
 .vscode/
 .DS_Store
