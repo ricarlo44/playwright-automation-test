@@ -1,69 +1,67 @@
-# playwright-automation-test
-Implement diferents kind of test in automation
 # Playwright Automation Test
 
-Repositorio de aprendizaje y práctica de automatización de pruebas con **Playwright**, **pytest**, **Python**, **JavaScript** y **TypeScript**. Los ejemplos cubren pruebas UI, API, integración, patrones de diseño, depuración, rendimiento y automatización contra servicios externos.
+Learning and practice repository for test automation with **Playwright**, **pytest**, **Python**, **JavaScript**, and **TypeScript**. The examples cover UI, API, integration, design patterns, debugging, performance, and automation against external services.
 
-> Este repositorio contiene ejemplos independientes. Cada carpeta puede tener su propia configuración y no todas las pruebas están diseñadas para ejecutarse juntas desde la raíz.
+> This repository contains independent examples. Each folder may have its own configuration, and not all tests are designed to run together from the root directory.
 
-## Contenido
+## Contents
 
-### Playwright con Python
+### Playwright with Python
 
-| Carpeta | Qué demuestra |
+| Folder | What it demonstrates |
 | --- | --- |
-| `ambitosfuncion` | Fixtures de sesión, argumentos de navegador/contexto, almacenamiento autenticado y detección de navegador. |
-| `API_server` | Pequeño servidor/API de usuarios y modelo Python de apoyo. |
-| `API_test` | Pruebas Python de aplicación/API. |
-| `asserts` | Aserciones y validaciones con Playwright/pytest. |
-| `codegen` | Flujo generado con Playwright Codegen contra la documentación de Playwright. |
-| `datadriven` | Pruebas parametrizadas con pytest para una función matemática. |
-| `emulationdevices` | Contextos con viewport, esquema de color y navegación manual usando Playwright. |
-| `GITHUBAPI` | Pruebas de API y UI sobre GitHub: crear issues, consultar issues y tomar capturas. |
-| `ICtest` | Ejemplos adicionales de pruebas de automatización. |
-| `JavascriptEvaluate` | Evaluación de JavaScript en página y generación de reportes HTML. |
-| `networkevents` | Observación de requests/responses, interceptación de rutas, modificación de respuestas y capturas. |
-| `optimizacion` | Bloqueo de recursos como imágenes, fuentes, estilos, media y scripts para acelerar pruebas. |
-| `POM` | Page Object Model con páginas de login y documentación de Playwright. |
-| `pruebas_api_rest` | Pruebas REST de health check, creación, consulta y validación de usuarios; incluye resultados históricos. |
-| `pruebas_integracion` | Persistencia de usuarios y consultas contra una base de datos mediante fixtures. |
-| `pruebas_interfaz_usuario` | Casos UI de Playwright/pytest sobre formularios e interacción del navegador. |
-| `pruebas_web_ui` | Pruebas web UI sobre formularios. |
-| `pytest` | Fixtures, utilidades, aserciones, generación de reportes y pruebas de apoyo. |
-| `python_test` | Pruebas unitarias de cálculo de totales, descuentos, listas vacías y errores de validación. |
-| `TDC` | Behavior-Driven Development con `pytest-bdd`, features Gherkin y step definitions de login. |
+| `ambitosfuncion` | Session fixtures, browser/context arguments, authenticated storage, and browser detection. |
+| `API_server` | Small user API/server and supporting Python model. |
+| `API_test` | Python application/API tests. |
+| `asserts` | Assertions and validations with Playwright/pytest. |
+| `codegen` | Playwright Codegen flow against the Playwright documentation. |
+| `datadriven` | Pytest parameterized tests for a mathematical function. |
+| `emulationdevices` | Browser contexts with viewport and color scheme settings, plus manual navigation. |
+| `GITHUBAPI` | GitHub API and UI tests: create issues, query issues, and capture screenshots. |
+| `ICtest` | Additional test automation examples. |
+| `JavascriptEvaluate` | JavaScript evaluation in a page and HTML report generation. |
+| `networkevents` | Request/response observation, route interception, response modification, and screenshots. |
+| `optimizacion` | Blocking images, fonts, stylesheets, media, and scripts to speed up tests. |
+| `POM` | Page Object Model with login and Playwright documentation pages. |
+| `pruebas_api_rest` | REST health check, user creation, user retrieval, and validation tests; includes historical results. |
+| `pruebas_integracion` | User persistence and database queries through pytest fixtures. |
+| `pruebas_interfaz_usuario` | Playwright/pytest UI cases for forms and browser interaction. |
+| `pruebas_web_ui` | Web UI tests for forms. |
+| `pytest` | Fixtures, utilities, assertions, report generation, and supporting tests. |
+| `python_test` | Unit tests for totals, discounts, empty lists, and validation errors. |
+| `TDC` | Behavior-Driven Development with `pytest-bdd`, Gherkin features, and login step definitions. |
 
-### Playwright con JavaScript y TypeScript
+### Playwright with JavaScript and TypeScript
 
-| Carpeta | Qué demuestra |
+| Folder | What it demonstrates |
 | --- | --- |
-| `APItestTypescript` | Prueba de API con `APIRequestContext` contra JSONPlaceholder, configuración TypeScript, Docker y workflow propio. |
-| `mytypescript` | Ejemplos JavaScript/TypeScript, navegación Playwright y workflow de GitHub Actions. |
-| `testypescript` | Suite TypeScript con Page Objects para login, productos, detalle de producto, datos del usuario y menú. |
-| `typescript` | Suite TypeScript con Page Objects de home, productos y carrito; incluye configuración Playwright y un reporte Allure generado. |
+| `APItestTypescript` | API test with `APIRequestContext` against JSONPlaceholder, TypeScript configuration, Docker, and its own workflow. |
+| `mytypescript` | JavaScript/TypeScript examples, Playwright navigation, and a GitHub Actions workflow. |
+| `testypescript` | TypeScript suite with Page Objects for login, products, product details, user data, and menus. |
+| `typescript` | TypeScript suite with home, products, and cart Page Objects; includes Playwright configuration and a generated Allure report. |
 
-## Tecnologías
+## Technologies
 
-- Python, pytest y pytest-bdd.
-- Playwright para Python, JavaScript y TypeScript.
-- Page Object Model, fixtures, parametrización y pruebas de integración.
-- Pruebas UI, API REST, eventos de red, emulación y evaluación de JavaScript.
-- Reportes HTML y Allure.
-- Docker para el proyecto TypeScript de API.
-- GitHub Actions en los proyectos que incluyen `.github/workflows`.
+- Python, pytest, and pytest-bdd.
+- Playwright for Python, JavaScript, and TypeScript.
+- Page Object Model, fixtures, parameterization, and integration testing.
+- UI, REST API, network event, emulation, and JavaScript evaluation testing.
+- HTML and Allure reporting.
+- Docker for the TypeScript API project.
+- GitHub Actions in projects containing `.github/workflows`.
 
-## Requisitos
+## Requirements
 
-- Python 3.9 o superior.
-- Node.js LTS para los proyectos JavaScript/TypeScript.
+- Python 3.9 or newer.
+- Node.js LTS for JavaScript/TypeScript projects.
 - Git.
-- Navegadores de Playwright.
-- Allure CLI solo si se desea abrir o generar reportes Allure.
-- Un servicio externo disponible cuando el ejemplo navega a Playwright Docs, Blass Academy, JSONPlaceholder o GitHub.
+- Playwright browsers.
+- Allure CLI only if you want to open or generate Allure reports.
+- Access to external services used by the examples, including Playwright Docs, Blass Academy, JSONPlaceholder, and GitHub.
 
-## Instalación Python
+## Python setup
 
-Desde la raíz del repositorio:
+From the repository root:
 
 ```powershell
 python -m venv .venv
@@ -72,18 +70,18 @@ python -m pip install -r requirements.txt
 playwright install
 ```
 
-Para ejecutar un proyecto Python concreto, usa su carpeta como directorio de trabajo:
+Run a specific Python project from its own directory:
 
 ```powershell
 cd python_test
 pytest -q
 ```
 
-Para los ejemplos configurados en modo visible, puedes ejecutar `pytest` sin `-q`. Algunas carpetas tienen `pytest.ini` con opciones como `--headed`, `--slowmo` y un navegador específico.
+Examples configured for visible execution can be run with `pytest` without `-q`. Some folders have a `pytest.ini` with options such as `--headed`, `--slowmo`, and a specific browser.
 
-## Instalación Node/TypeScript
+## Node and TypeScript setup
 
-Cada proyecto Node mantiene su propio `package.json` y `package-lock.json`:
+Each Node project maintains its own `package.json` and `package-lock.json`:
 
 ```powershell
 cd APItestTypescript
@@ -92,33 +90,33 @@ npx playwright install
 npm test
 ```
 
-Otros proyectos TypeScript/JavaScript se ejecutan de la misma forma desde su carpeta. Revisa primero sus scripts con:
+Use the same approach for the other JavaScript/TypeScript projects. Inspect available scripts first:
 
 ```powershell
 npm run
 ```
 
-## GitHub API y secretos
+## GitHub API and secrets
 
-`GITHUBAPI` usa `GITHUB_TOKEN` desde una variable de entorno. Nunca guardes tokens en el código ni los subas al repositorio.
+`GITHUBAPI` reads `GITHUB_TOKEN` from an environment variable. Never store tokens in source code or commit them to the repository.
 
 ```powershell
-$env:GITHUB_TOKEN = "tu-token-local"
+$env:GITHUB_TOKEN = "your-local-token"
 cd GITHUBAPI
 pytest -q
 ```
 
-El ejemplo apunta por defecto al repositorio de prueba definido en `GITHUBAPI/creds.py`. Usa una cuenta y un repositorio de pruebas, porque el fixture crea y elimina un repositorio y crea un issue.
+The example targets the test repository configured in `GITHUBAPI/creds.py`. Use a test account and repository because the fixture creates and deletes a repository and creates an issue.
 
-## Reportes
+## Reports
 
-Los proyectos con reporter HTML suelen generar sus resultados en `playwright-report/` o `reports/`. Para abrir un reporte Playwright:
+Projects with HTML reporters usually generate results in `playwright-report/` or `reports/`. Open a Playwright report with:
 
 ```powershell
 npx playwright show-report
 ```
 
-Para un reporte Allure existente:
+Serve an existing Allure report with:
 
 ```powershell
 allure serve allure-results
@@ -126,7 +124,7 @@ allure serve allure-results
 
 ## Docker
 
-`APItestTypescript/dockerfile` crea una imagen basada en la imagen oficial de Playwright:
+`APItestTypescript/dockerfile` builds an image based on the official Playwright image:
 
 ```powershell
 cd APItestTypescript
@@ -136,23 +134,23 @@ docker run --rm api-test-typescript
 
 ## GitHub Actions
 
-Los workflows ubicados dentro de cada proyecto se ejecutan cuando ese proyecto forma parte del repositorio. El workflow de `APItestTypescript` instala dependencias, instala navegadores, ejecuta Playwright y publica el reporte como artefacto.
+Workflows located inside individual projects run when those projects are part of the repository. The `APItestTypescript` workflow installs dependencies, installs browsers, runs Playwright, and uploads the report as an artifact.
 
-Para evolucionar este repositorio con una metodología mantenible:
+For a maintainable development process:
 
-1. Trabaja en ramas cortas y abre Pull Requests hacia `main`.
-2. Mantén cada ejemplo autocontenido y documenta sus dependencias externas.
-3. No mezcles reportes generados, credenciales, entornos virtuales ni `node_modules` con el código fuente.
-4. Añade una prueba que reproduzca el comportamiento antes de corregir una regresión.
-5. Usa fixtures y Page Objects para reducir duplicación sin ocultar el comportamiento de la prueba.
+1. Work on short-lived branches and open Pull Requests into `main`.
+2. Keep each example self-contained and document external dependencies.
+3. Do not commit generated reports, credentials, virtual environments, or `node_modules`.
+4. Add a test that reproduces a regression before fixing it.
+5. Use fixtures and Page Objects to reduce duplication without hiding test behavior.
 
-## Limitaciones conocidas
+## Known limitations
 
-- La mayoría de ejemplos dependen de sitios externos y pueden fallar por cambios de UI, red, rate limits o disponibilidad del servicio.
-- Muchas configuraciones están orientadas a ejecución local visible (`headed`) y pueden necesitar ajustes para CI sin interfaz gráfica.
-- No existe todavía un workflow único en la raíz que instale y ejecute todos los lenguajes y proyectos.
-- Algunos reportes y capturas son artefactos históricos, no el resultado de una ejecución actual.
+- Most examples depend on external websites and may fail because of UI changes, network issues, rate limits, or service availability.
+- Many configurations target visible local execution (`headed`) and may need adjustments for headless CI environments.
+- There is not yet one root workflow that installs and runs every language and project.
+- Some reports and screenshots are historical artifacts, not the result of a current execution.
 
-## Proyectos relacionados
+## Related project
 
-La aplicación web `julietaPage` se mantiene fuera de este repositorio, en: https://github.com/ricarlo44/julietamaga
+The `julietaPage` web application is maintained outside this repository at https://github.com/ricarlo44/julietamaga
